@@ -399,5 +399,20 @@ namespace DancingLineFanmade.Level
             startPosition = transform.position;
         }
 #endif
+        /// <summary>
+        /// 手动断开当前的线
+        /// </summary>
+        public void BreakLine()
+        {
+            tail = null;
+        }
+
+        /// <summary>
+        /// 【新增】手动开始一段新的线
+        /// </summary>
+        public void StartNewTail()
+        {
+            CreateTail();
+        }
     }
 }
